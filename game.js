@@ -17,6 +17,7 @@ const userWin = document.querySelector(".user-winner");
 const pcWin = document.querySelector(".pc-winner");
 
 const finalVictory = document.querySelector(".victory");
+const victoryBtn = document.querySelector(".victory-play-again");
 const nextBtn = document.querySelector(".next-btn");
 const mainTop = document.querySelector(".main-top");
 
@@ -170,7 +171,15 @@ playAgain.addEventListener("click", () => {
   userChoiceResult.className = "user-choice-result";
   pcChoiceResult.className = "pc-choice-result";
 });
-
+victoryBtn.addEventListener("click", () => {
+  mainTop.style.display = "block flex";
+  mainGame.style.display = "block";
+  gameResult.style.display = "none";
+  finalVictory.style.display = "none";
+  nextBtn.style.display = "none";
+  userChoiceResult.className = "user-choice-result";
+  pcChoiceResult.className = "pc-choice-result";
+});
 // Rules Box
 
 rules.addEventListener("click", () => {
