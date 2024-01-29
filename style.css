@@ -368,7 +368,9 @@ body {
   top: 5%;
 }
 .next-btn {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 35px;
   width: 90px;
   position: absolute;
@@ -376,7 +378,4 @@ body {
   border-radius: 7px;
   bottom: 5%;
   right: 13%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

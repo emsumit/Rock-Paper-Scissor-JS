@@ -95,7 +95,7 @@ function gameLogic(userInput, pcInput) {
     userScore();
     testResults.innerHTML = "YOU WIN";
     userWin.classList.add("winner-animation");
-    nextBtn.style.display = "block";
+    nextBtn.style.display = "block flex";
     nextBtn.addEventListener("click", () => {
       finalVictory.style.display = "block";
       mainTop.style.display = "none";
