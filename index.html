@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="main-top">
+        <div class="game-title">
+          <p>
+            ROCK <br />
+            PAPER <br />
+            SCISSOR
+          </p>
+        </div>
+        <div class="score">
+          <div>
+            <p>
+              COMPUTER <br />
+              SCORE
+            </p>
+            <h1 class="pc-score">0</h1>
+          </div>
+          <div>
+            <p>
+              YOUR <br />
+              SCORE
+            </p>
+            <h1 class="your-score">0</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- input div -->
+
+      <div class="game">
+        <div class="game-div-btns">
+          <div class="rock-btn rock-position">
+            <img class="rock-btn-img" src="images/rock.png" alt="Rock" />
+          </div>
+          <div class="game-line-1"></div>
+          <div class="paper-btn paper-position">
+            <img class="paper-btn-img" src="images/paper.png" alt="Paper" />
+          </div>
+          <div class="game-line-2 scissor-position"></div>
+          <div class="scissor-btn">
+            <img
+              class="scissor-btn-img"
+              src="images/scissor.png"
+              alt="Scissor"
+            />
+          </div>
+          <div class="game-line-3"></div>
+        </div>
+      </div>
+
+      <!-- result div -->
+
+      <div class="game-result">
+        <p class="you-picked">YOU PICKED</p>
+        <div class="user-winner"></div>
+        <div class="user-choice-result">
+          <img class="user-choice-img" src="" alt="" />
+        </div>
+        <p class="pc-picked">PC PICKED</p>
+        <div class="pc-winner"></div>
+        <div class="pc-choice-result">
+          <img class="pc-choice-img" src="" alt="" />
+        </div>
+        <div class="test-result">
+          <h1 class="your-result">YOU LOST</h1>
+          <h2 class="show-or-hide">AGAINST PC</h2>
+        </div>
+        <button class="mybtn">PLAY AGAIN</button>
+      </div>
+
+      <!-- rules div -->
+
+      <div class="rules-btn">RULES</div>
+      <div class="rules-box">
+        <div class="close-rules">&times;</div>
+        <h2>Game Rules</h2>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you'll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
