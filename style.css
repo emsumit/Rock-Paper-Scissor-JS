@@ -317,3 +317,66 @@ body {
     opacity: 0;
   }
 }
+.victory {
+  display: none;
+}
+.win-next {
+  display: none;
+  height: 700px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.win-img {
+  height: 300px;
+  width: 600px;
+  position: relative;
+}
+.trophy {
+  position: absolute;
+  top: 25%;
+  left: 31%;
+}
+.stars {
+  position: absolute;
+  top: -2%;
+  left: 8%;
+}
+.win-text {
+  height: 140px;
+  width: 100%;
+}
+.win-text > h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 4.5rem;
+}
+.win-text > h2 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.win-play-again {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.win-play-again > button {
+  position: absolute;
+  top: 5%;
+}
+.next-btn {
+  display: none;
+  height: 35px;
+  width: 90px;
+  position: absolute;
+  border: solid white 2px;
+  border-radius: 7px;
+  bottom: 5%;
+  right: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

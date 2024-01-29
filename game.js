@@ -16,6 +16,10 @@ const playAgain = document.querySelector(".mybtn");
 const userWin = document.querySelector(".user-winner");
 const pcWin = document.querySelector(".pc-winner");
 
+const finalVictory = document.querySelector(".victory");
+const nextBtn = document.querySelector(".next-btn");
+const mainTop = document.querySelector(".main-top");
+
 const playerScore = document.querySelector(".your-score");
 const computerScore = document.querySelector(".pc-score");
 
@@ -91,6 +95,12 @@ function gameLogic(userInput, pcInput) {
     userScore();
     testResults.innerHTML = "YOU WIN";
     userWin.classList.add("winner-animation");
+    nextBtn.style.display = "block";
+    nextBtn.addEventListener("click", () => {
+      finalVictory.style.display = "block";
+      mainTop.style.display = "none";
+      gameResult.style.display = "none";
+    });
     return "User Win!";
   } else {
     pcScore();
@@ -155,6 +165,8 @@ scissor.addEventListener("click", () => {
 playAgain.addEventListener("click", () => {
   mainGame.style.display = "block";
   gameResult.style.display = "none";
+  finalVictory.style.display = "none";
+  nextBtn.style.display = "none";
   userChoiceResult.className = "user-choice-result";
   pcChoiceResult.className = "pc-choice-result";
 });
